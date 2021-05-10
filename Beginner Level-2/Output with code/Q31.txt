@@ -1,0 +1,61 @@
+Mean -
+Mean is average value of all the occurrences.
+Mean = sum of occurrences / total no of occurrences
+For Eg, 
+	occurrences = 3, 2, 5, 10
+	Mean = (3 + 2 + 5 + 10) / 4 = 5
+	
+Mode - 
+Mode is a value which occurs maximum number of times.
+and if 2 numbers repeated maximum times then mode will be the smaller number.
+For Eg,
+type1:
+	occurrences = 2, 1, 1, 6, 1, 7, 2, 1, 1, 9, 5
+	Mode = 1 ( as 1 occurs maximum number of times (ie, 4) than other elements)
+
+type2:
+	occurrences = 2, 2, 3, 4, 12, 12, 4, 12, 4
+	Mode should be 4 and 12; but since 4 is smaller value mode will be 4
+	Therefore, Mode = 4
+
+Median - 
+For finding median occurrences must be sorted (in an ascending order) manner.
+Median is a middle number among all the occurrences placed in a sorted manner.
+For Eg,
+type1: when total no of occurrences is odd
+	occurrence = 1, 1, 2, 3, 5, 7, 10
+	Median = 3 (as it is exactly middle of all)
+
+type2: when total no of occurrences is even
+	occurrences = 1, 1, 2, 3, 5, 7, 10, 13
+	Median =  step1: take two middle numbers (ie, 3 and 5)
+		step2: add them (ie, 3 + 5 = 8)
+		step3: take average of them (ie, 8/2 = 4)
+	Therefore, Median = 4
+
+
+Logic for Median -
+
+case1: when total no of occurrences is odd
+	occurrence = 1, 1, 2, 3, 5, 7, 10
+	Median = 3 (as it is exactly middle of all)
+
+here, total no of occurrences = 7
+step1: 7 -1 = 6
+step2: 6/2 = 3, hence 3 will be the index for occurrences
+step3: occurances[3] = 3 = Median
+
+
+case1: when total no of occurrences is odd
+occurrences = 1, 1, 2, 3, 5, 7, 10, 13
+	Median =  step1: take two middle numbers (ie, 3 and 5)
+		step2: add them (ie, 3 + 5 = 8)
+		step3: take average of them (ie, 8/2 = 4)
+	Therefore, Median = 4
+
+
+here, total no of occurrences = 8
+step1: 8/2 = 4, hence 4 will be the index for num1 which is middle of two numbers
+step2: 4-1 = 3, hence 3 will be the index for num2 middle which is middle of two numbers
+step3: now, occurances[4] = 5 and occurances[3] = 3
+step4: (5 + 3)/ 2 = 4 = Median
